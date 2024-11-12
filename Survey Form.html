@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="Untitled-1.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Mogra&family=Rubik+Dirt&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div id="d1">
+            <div id="hero-text">
+                <h1 id="title"><strong>Christmas Party</strong></h1>
+                <p id="description">Details shall be discussed and <br>announced at a later date</p>
+            </div>
+        </div>
+        <div id="d2">
+            <form id="survey-form" action="" method="" autocomplete="off">
+                <div class="personal-details">
+                    <label id="name-label" for="name">Full Name:</label>
+                    <input id="name" type="text" name="full-name" placeholder="Full Name" maxlength="50" required>
+                    <label id="email-label" for="email">Email:</label>
+                    <input id="email" type="email" name="email-address" placeholder="Email" maxlength="50" required>
+                    <label id="age-label" for="number">Age:</label>
+                    <input id="number" type="number" name="Age" placeholder="Age" min="1" max="150" required>
+                </div>
+                <div class="drinks">
+                    <span class="span-alcohol"> Choice of Alcoholic Drinks:</span>
+                    <div class="alcohol-drinks">
+                        <input id="vodka" type="checkbox" name="vodka" value="vodka">
+                        <label for="vodka">Vodka</label>
+                        <input id="whiskey" type="checkbox" name="whiskey" value="whiskey">
+                        <label for="whiskey">Whiskey</label>
+                        <input id="brandy" type="checkbox" name="brandy" value="brandy">
+                        <label for="brandy">Brandy</label>
+                        <input id="tequila" type="checkbox" name="tequila" value="tequila">
+                        <label for="tequila">Tequila</label>
+                        <input id="gin" type="checkbox" name="gin" value="gin">
+                        <label for="gin">Gin</label>
+                        <input id="wine" type="checkbox" name="wine" value="wine">
+                        <label for="wine">Wine</label>
+                        <input id="beer" type="checkbox" name="beer" value="beer">
+                        <label for="beer">Beer</label>
+                    </div>
+                    <span class="span-non-alcohol"> Choice of Non-Alcoholic Drinks:</span>
+                    <div class="non-alcohol-drinks">
+                        <label id="list-label" for="dropdown">Water:</label>
+                        <select id="dropdown" name="water-list" placeholder="choose your water">
+                            <option value="" disabled selected hidden>choose your water</option>
+                            <option value="none"></option>
+                            <option value="Summit">Summit</option>
+                            <option value="Absolute">Absolute</option>
+                            <option value="Wilkins">Wilkins</option>
+                            <option value="Nature's Spring">Nature's Spring</option>
+                        </select>
+                        <br>
+                        <label id="list-label-cola" for="dropdown-cola">Cola Drinks:</label>
+                        <select id="dropdown-cola" name="cola-list">
+                            <option value="" disabled selected hidden>choose your cola</option>
+                            <option value="none"></option>
+                            <option value="Coke">Coke</option>
+                            <option value="Sprite">Sprite</option>
+                            <option value="Royal">Royal</option>
+                            <option value="Pepsi">Pepsi</option>
+                            <option value="7up">7up</option>
+                            <option value="Mug">Mug</option>
+                            <option value="RC">RC</option>
+                            <option value="Dr.Pepper">Dr.Pepper</option>
+                        </select>
+                        <br>
+                        <label id="list-label-milk" for="dropdown-milk">Milk-Based Drinks:</label>
+                        <select id="dropdown-milk" name="milk-list">
+                            <option value="" disabled selected hidden>choose your milk</option>
+                            <option value="none"></option>
+                            <option value="Milo">Milo</option>
+                            <option value="Ovaltine">Ovaltine</option>
+                            <option value="Nesquick">Nesquick</option>
+                            <option value="Cowhead">Cowhead</option>
+                        </select>
+                        <br>
+                        <label id="list-label-fruit" for="dropdown-fruit">Fruit Drinks:</label>
+                        <select id="dropdown-fruit" name="fruit-list">
+                            <option value="" disabled selected hidden>choose your fruit</option>
+                            <option value="none"></option>
+                            <option value="Strawberry">Strawberry</option>
+                            <option value="Mango">Mango</option>
+                            <option value="Pineapple">Pineapple</option>
+                            <option value="Apple">Apple</option>
+                            <option value="Coconut">Coconut</option>
+                            <option value="Lychee">Lychee</option>
+                            <option value="Grapes">Grapes</option>
+                            <option value="Banana">Banana</option>
+                        </select>
+                    </div>
+                </div>
+                <br>
+                <div class="last-form">
+                    <span class="question">will you be going?</span>
+                    <div class="decision">
+                        <br>
+                        <input id="attending" type="radio" name="status" value="attending">
+                        <label for="attending">Attending</label>
+                        <br>
+                        <input id="not-attending" type="radio" name="status" value="not-attending">
+                        <label for="not-attending">Not Attending</label>
+                        <br>
+                        <input id="undecided" type="radio" name="status" value="undecided">
+                        <label for="undecided">Undecided</label>
+                        <br>
+                        <input id="konti" type="radio" name="status" value="konti">
+                        <label for="konti">Konting Pilit Pa</label>
+                    </div>
+                </div>
+                <div class="text-area">
+                    <label for="text-area" class="label-text-area">Special Instructions or Violent
+                        Reactions:</label>
+                    <textarea name="message" id="text-area" placeholder="Write me something" maxlength="500"></textarea>
+                </div>
+                <div class="submit-button">
+                    <button id="submit" type="submit" name="Submission"><strong>submit</strong></button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+</body>
+
+</html>
